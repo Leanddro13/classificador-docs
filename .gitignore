@@ -1,0 +1,35 @@
+# Ambientes Virtuais
+.venv/
+env/
+venv/
+
+# Dados e Datasets (CRÍTICO: Risco de Vazamento de Dados)
+*.csv
+*.xlsx
+*.json
+dataset_documentos.csv
+
+# Modelos de Machine Learning (Arquivos Binários Pesados)
+*.joblib
+*.pkl
+*.pt
+*.h5
+data/modelo_classificador.joblib
+data/modelo_pipeline.joblib
+
+# Resultados e Logs
+data/results/
+*.log
+
+# Python Cache e Arquivos Compilados
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Arquivos de Configuração Local e Segredos
+.venv/
+.venv
+.env
+.env.local
+secrets.json

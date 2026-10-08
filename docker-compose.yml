@@ -1,0 +1,12 @@
+services:
+  classificador-docs:
+    build: .
+    container_name: classificador_documentos
+    restart: unless-stopped
+    ports:
+      - "8010:8000"
+    volumes:
+      - ./data:/app/data
+      - ./dataset_documentos.csv:/app/dataset_documentos.csv
+    environment:
+      - PYTHONUNBUFFERED=1
